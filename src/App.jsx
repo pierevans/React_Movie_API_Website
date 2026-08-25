@@ -1,10 +1,10 @@
 import React from 'react'
-import MovieCard from './components/MovieCard'
+import Home from './components/Home'
 
 const App = () => {
   return (
-    <div>
-        <MovieCard />
+    <div className='bg-light h-screen'>
+      <Home/>   
     </div>
   )
 }
