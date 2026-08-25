@@ -1,19 +1,19 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className=" flex items-center justify-between h-20 bg-dark shadow-2xl p-10">
       <h1 className="text-[30px] font-bold text-main">Movie App</h1>
       <ul className="flex gap-5 font-semibold text-[20px] text-main">
         <li>
-          <a href="" className="hover:text-hover transition duration-300">
+          <Link href="/" className="hover:text-hover transition duration-300">
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="" className="hover:text-hover transition duration-300">
+          <Link href="/favorites" className="hover:text-hover transition duration-300">
             Favorites
-          </a>
+          </Link>
         </li>
       </ul>
     </div>

@@ -3,7 +3,7 @@ import { CiHeart } from "react-icons/ci";
 
 const MovieCard = ({ movie }) => {
   const [like, setLike] = useState();
-  let clickOnCard = () => {
+  const clickOnCard = () => {
     setLike(!like);
   };
 
@@ -12,12 +12,8 @@ const MovieCard = ({ movie }) => {
       <div className="movie-poster">
         <img src={movie.url} alt={movie.title} />
         <div className="movie-overlay">
-            <button className="favorite-btn" onClick={clickOnCard}>
-            {like ? (
-                <CiHeart style={{ color: "white" }} />
-            ) : (
-                <CiHeart style={{ color: "red" }} />
-            )}
+            <button onClick={clickOnCard}>
+              <CiHeart className={`${like? "text-white": "text-main"}`}/>
             </button>
         </div>
       </div>
