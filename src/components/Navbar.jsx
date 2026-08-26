@@ -6,12 +6,12 @@ const Navbar = () => {
       <h1 className="text-[30px] font-bold text-main">Movie App</h1>
       <ul className="flex gap-5 font-semibold text-[20px] text-main">
         <li>
-          <Link href="/" className="hover:text-hover transition duration-300">
+          <Link to="/" className="hover:text-hover transition duration-300">
             Home
           </Link>
         </li>
         <li>
-          <Link href="/favorites" className="hover:text-hover transition duration-300">
+          <Link to="/favorites" className="hover:text-hover transition duration-300">
             Favorites
           </Link>
         </li>
